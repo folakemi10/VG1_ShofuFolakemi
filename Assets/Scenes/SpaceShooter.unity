@@ -588,7 +588,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnPoint (1)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -668,8 +668,7 @@ MonoBehaviour:
   - {fileID: 7916298256231100421, guid: d94aff2d6962fac459a845ca16074673, type: 3}
   - {fileID: 8073204525260960350, guid: e4329fc16fc837d4fb2cd4ae4a14454e, type: 3}
   - {fileID: 2639181888407373928, guid: b57b59c0d6c8b804fb50580ecb91be58, type: 3}
-  explosionPrefabs:
-  - {fileID: 5341223147910361316, guid: 318e5d95a79c2a24b84be1c917dc0fe3, type: 3}
+  explosionPrefab: {fileID: 0}
   maxAsteroidDelay: 2
   minAsteroidDelay: 0.2
   timeElapsed: 0

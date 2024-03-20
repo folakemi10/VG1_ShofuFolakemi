@@ -42,7 +42,7 @@ namespace SpaceShooter
            int randomSpawnIndex = Random.Range(0, spawnPoints.Length);
            Transform randomSpawnPoint = spawnPoints[randomSpawnIndex];
            int randomASteroidIndex = Random.Range(0, asteroidPrefabs.Length);
-           GameObject randomAsteroidPrefab = asteroidPrefabs[randomSpawnIndex];
+           GameObject randomAsteroidPrefab = asteroidPrefabs[randomASteroidIndex];
 
 
           //spawn

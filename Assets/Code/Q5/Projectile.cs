@@ -26,12 +26,12 @@ namespace SpaceShooter
             if(target != null)
             {
                 Vector2 directionToTarget = target.position - transform.position;
-                float angle = Mathf.Atan2(directionToTarget.x, directionToTarget.y) * Mathf.Rad2Deg;
+                float angle = Mathf.Atan2(directionToTarget.y, directionToTarget.x) * Mathf.Rad2Deg;
            
                 _rb.MoveRotation(angle);
             }
 
-            _rb.AddForce(transform.right* acceleration);
+            _rb.AddForce(transform.right * acceleration);
 
 
             _rb.velocity = Vector2.ClampMagnitude(_rb.velocity, maxSpeed);
@@ -63,7 +63,7 @@ namespace SpaceShooter
                 if(asteroid.transform.position.x > transform.position.x) { 
                 Vector2 directionToTarget = asteroid.transform.position - transform.position;
 
-                    if(directionToTarget.sqrMagnitude > closestDistance) { 
+                    if(directionToTarget.sqrMagnitude < closestDistance) { 
                     closestDistance = directionToTarget.sqrMagnitude;
                     target = asteroid.transform;
                     }
