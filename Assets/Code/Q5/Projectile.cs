@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using UnityEngine;
 
 namespace SpaceShooter
@@ -19,8 +20,8 @@ namespace SpaceShooter
         // Update is called once per frame
         void Update()
         {
-            float acceleration = 1f;
-            float maxSpeed = 2f;
+            float acceleration = GameController.instance.missileSpeed / 2f;
+            float maxSpeed = GameController.instance.missileSpeed;
 
             ChooseNearestTarget();
             if(target != null)
@@ -49,9 +50,11 @@ namespace SpaceShooter
                     GameController.instance.explosionPrefab, transform.position, Quaternion.identity);
             
                 Destroy(explosion, 0.25f);
+                GameController.instance.EarnPoints(10);
             }
         }
 
+ 
         void ChooseNearestTarget()
         {
             float closestDistance = 9999f;
