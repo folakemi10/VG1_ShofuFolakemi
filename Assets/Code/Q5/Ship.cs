@@ -39,10 +39,6 @@ namespace SpaceShooter
             rb.bodyType = RigidbodyType2D.Dynamic;
         }
 
-        void OnCollisionEnter2D(Collision2D collision)
-        {
-            
-        }
         void FireProjectile()
         {
             Instantiate(projectilePrefab, transform.position, Quaternion.identity);

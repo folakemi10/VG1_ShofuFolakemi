@@ -544,7 +544,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 5118719898360503153, guid: b08e07a64ee25ac459b8faff1a902789, type: 3}
+  imageHealthBar: {fileID: 0}
   firingDelay: 1
+  healthMax: 100
+  health: 100
 --- !u!1 &1735752436
 GameObject:
   m_ObjectHideFlags: 0
@@ -668,7 +671,7 @@ MonoBehaviour:
   - {fileID: 7916298256231100421, guid: d94aff2d6962fac459a845ca16074673, type: 3}
   - {fileID: 8073204525260960350, guid: e4329fc16fc837d4fb2cd4ae4a14454e, type: 3}
   - {fileID: 2639181888407373928, guid: b57b59c0d6c8b804fb50580ecb91be58, type: 3}
-  explosionPrefab: {fileID: 0}
+  explosionPrefab: {fileID: 5341223147910361316, guid: 318e5d95a79c2a24b84be1c917dc0fe3, type: 3}
   maxAsteroidDelay: 2
   minAsteroidDelay: 0.2
   timeElapsed: 0
