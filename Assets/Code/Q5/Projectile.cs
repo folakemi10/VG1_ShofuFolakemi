@@ -38,7 +38,7 @@ namespace SpaceShooter
             _rb.velocity = Vector2.ClampMagnitude(_rb.velocity, maxSpeed);
         }
 
-        private void OnCollisionEnter2D(Collision2D other)
+        void OnCollisionEnter2D(Collision2D other)
         {
             if (other.gameObject.GetComponent<Asteroid>())
             {

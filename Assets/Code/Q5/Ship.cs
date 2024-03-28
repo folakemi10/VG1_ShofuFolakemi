@@ -69,7 +69,7 @@ namespace SpaceShooter
 
         }
 
-        private void OnCollisionEnter2D(Collision2D other)
+        void OnCollisionEnter2D(Collision2D other)
         {
             if(other.gameObject.GetComponent<Asteroid>())
             {
@@ -107,7 +107,7 @@ namespace SpaceShooter
 
         public void UpgradeFireSpeed()
         {
-            int cost = 100+ Mathf.RoundToInt( (1f - firingDelay) * 100f);
+            int cost = 100 + Mathf.RoundToInt( (1f - firingDelay) * 100f);
 
             if (GameController.instance.money >= cost)
             {
