@@ -61,7 +61,7 @@ namespace SpaceShooter
                 money -= cost;
                 missileSpeed += 1f;
 
-                missileSpeedUpgradeText.text = "Missile Speedp $" + Mathf.RoundToInt(25 * missileSpeed);
+                missileSpeedUpgradeText.text = "Missile Speed $" + Mathf.RoundToInt(25 * missileSpeed);
             }
         }
 
@@ -73,7 +73,7 @@ namespace SpaceShooter
                 money -= cost;
                 bonusMultiplier += 1f;
 
-                bonusUpgradeText.text = "Multiplierp $" + Mathf.RoundToInt(100 * bonusMultiplier);
+                bonusUpgradeText.text = "Multiplier $" + Mathf.RoundToInt(100 * bonusMultiplier);
             }
         }
 
